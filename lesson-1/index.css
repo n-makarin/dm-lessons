@@ -12,11 +12,16 @@ ul {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.header .header__logo a {
+  display: flex;
 }
 
 .header .header__logo svg {
   width: 70px;
-  /* height: 22px; */
 }
 
 .header .header__nav ul {
@@ -26,9 +31,19 @@ ul {
 .header .header__nav ul a {
   text-decoration: none;
   margin-right: 15px;
+  color: rgb(92, 92, 92);
+  transition: color .2s;
+}
+
+.header .header__nav ul a:hover {
   color: black;
 }
 
 .header .header__nav ul a:last-child {
   margin-right: 0;
+}
+
+.wrapper {
+  max-width: 80%;
+  margin: 0 auto;
 }
