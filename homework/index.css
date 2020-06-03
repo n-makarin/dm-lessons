@@ -7,3 +7,66 @@ html, body {
 body {
     background-color: lemonchiffon;
 }
+
+.wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+.header__nav li{
+    display: inline-block;
+}
+
+.header__nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header__nav ul li:last-child{
+    margin-right: 15px
+}
+
+.header .header__nav ul a {
+    text-decoration: none;
+    color: rgb(92, 92, 92);
+    transition: color .2s;
+}
+
+.header .header__nav ul a:hover {
+    color: black;
+}
+
+.header .logo a svg:hover {
+    filter: invert(81%) sepia(5%) saturate(20%) hue-rotate(16deg) brightness(100%) contrast(100%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header .logo a{
+    display: flex;
+}
+
+.header__link_nested {
+    position: relative;
+}
+
+.header__link_nested:hover .header__submenu {
+    display: flex;
+    flex-direction: column;
+  }
+
+.header__submenu {
+    position: absolute;
+    display: none;
+    list-style: none; 
+}
+
+.header__submenu li a {
+    white-space: nowrap;
+}
