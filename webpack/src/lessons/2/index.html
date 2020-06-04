@@ -6,11 +6,45 @@
   <title>Document</title>
 </head>
 <body>
-  <header>
+  <header class="wrapper">
     <nav>
       <a href="/">Home</a>
     </nav>
   </header>
-  lesson 2
+  <main class="wrapper">
+    <h1>Lesson 2</h1>
+    <div class="content ">
+      <form action="POST" class="form">
+
+        <div class="form-group">
+          <label class="form-group__label" for="label">Login</label>
+          <input class="form-group__item" id="label" type="text" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-group__label" for="password">Password</label>
+          <input class="form-group__item" id="password" type="password" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-group__label" for="number">Number</label>
+          <input class="form-group__item" id="number" type="number" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-group__label" for="email">Email</label>
+          <input class="form-group__item" id="email" type="email" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-group__label" for="comment">Comment</label>
+          <textarea class="form-group__item" id="comment" type="email"></textarea>
+        </div>
+
+        <button class="button" type="submit">Send</button>
+        
+      </form>
+    </div>
+  </main>
 </body>
 </html>
