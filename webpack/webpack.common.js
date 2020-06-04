@@ -88,6 +88,12 @@ module.exports = {
       template: './src/lessons/2/index.html',
       inject: 'head'
     }),
+    new HtmlWebpackPlugin({
+      title: 'homework-2',
+      filename: 'homework-2.html',
+      template: './src/homeworks/2/index.html',
+      inject: 'head'
+    }),
 
     new PreloadWebpackPlugin({
       rel: 'preload',
