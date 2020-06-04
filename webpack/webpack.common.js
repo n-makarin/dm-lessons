@@ -68,6 +68,8 @@ module.exports = {
         to: path.resolve(__dirname, 'dist', 'robots.txt')
       }
     ]),
+
+    // Add html pages here
     new HtmlWebpackPlugin({
       title: 'tris-home-page',
       filename: 'index.html',
@@ -80,6 +82,13 @@ module.exports = {
       template: './src/404.html',
       inject: 'head'
     }),
+    new HtmlWebpackPlugin({
+      title: 'lesson-2',
+      filename: 'lesson-2.html',
+      template: './src/lessons/2/index.html',
+      inject: 'head'
+    }),
+
     new PreloadWebpackPlugin({
       rel: 'preload',
       as(entry) {
