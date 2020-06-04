@@ -7,4 +7,6 @@ import './index.html';
 import './index.scss';
 import './scripts/script';
 
+import './lessons/2/index.scss';
+
 OfflinePluginRuntime.install();
