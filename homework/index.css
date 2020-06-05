@@ -24,7 +24,7 @@ body {
 }
 
 .header__nav ul li:last-child{
-    margin-right: 0px
+    margin-right: 15px
 }
 
 .header .header__nav ul a {
@@ -37,12 +37,8 @@ body {
     color: black;
 }
 
-.header .logo a svg path {
-    transition: fill .2s;
-}
-
-.header .logo a svg:hover path {
-    fill: white;
+.header .logo a svg:hover {
+    filter: invert(81%) sepia(5%) saturate(20%) hue-rotate(16deg) brightness(100%) contrast(100%);
 }
 
 .header {
