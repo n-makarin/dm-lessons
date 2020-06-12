@@ -44,6 +44,9 @@
       &:hover {
         background: rgba(162, 179, 190, 0.288);
         cursor: pointer;
+        a {
+          color: $blue-light;
+        }
       }
       &:first-child {
         margin-top: 0;

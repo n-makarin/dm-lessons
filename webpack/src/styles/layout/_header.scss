@@ -1,12 +1,21 @@
 .header {
-  border-bottom: 1px solid rgb(226, 226, 226);
+  // border-bottom: 1px solid rgb(226, 226, 226);
   padding: 10px 0;
   background: rgba(128, 128, 128, 0.24);
+  box-shadow: 0px -7px 15px 2px #00000096;
   
   .wrapper {
     display: flex;
   }
   &__nav {
     margin-left: auto;
+  }
+
+  a {
+    color: black;
+    transition: .2s;
+    &:hover {
+      color: $blue-light;
+    }
   }
 }
