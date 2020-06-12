@@ -1,0 +1,56 @@
+.nav {
+  > ul {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &_nested {
+      position: relative;
+      &:hover {
+        .nav__submenu {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  &-item {
+    &:hover .nav-item__label {
+      background: rgba(162, 179, 190, 0.288);
+    }
+    &__label {
+      cursor: pointer;
+      padding: 11px;
+      transition: background .2s;;
+    }
+  }
+
+  &__submenu {
+    position: absolute;
+    top: 29px;
+    display: none;
+    background: rgba(162, 179, 190, 0.288);
+  }
+
+  &-submenu {
+    &__item {
+      padding: 11px;
+      transition: background .2s;;
+      &:hover {
+        background: rgba(162, 179, 190, 0.288);
+        cursor: pointer;
+      }
+      &:first-child {
+        margin-top: 0;
+      }
+      a {
+        white-space: nowrap;
+      }
+    }
+  }
+}
