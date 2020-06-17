@@ -89,6 +89,12 @@ module.exports = {
       inject: 'head'
     }),
     new HtmlWebpackPlugin({
+      title: 'lesson-3',
+      filename: 'lesson-3.html',
+      template: './src/lessons/3/index.html',
+      inject: 'head'
+    }),
+    new HtmlWebpackPlugin({
       title: 'homework-2',
       filename: 'homework-2.html',
       template: './src/homeworks/2/index.html',
