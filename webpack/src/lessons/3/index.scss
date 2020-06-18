@@ -27,10 +27,19 @@
   
   &__action-bar {
     display: flex;
-    padding: 5px;
     img {
       width: 30px;
     }
+  }
+
+  &__comparison {
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  &__add-to-cart {
+    padding: 5px;
+    cursor: pointer;
   }
 
   &__add-to-cart:last-child {
