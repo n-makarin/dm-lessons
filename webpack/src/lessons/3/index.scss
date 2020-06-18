@@ -20,4 +20,20 @@
     font-size: 14px;
     color: #999;
   }
+
+  &__bottom {
+    display: flex;
+  }
+  
+  &__action-bar {
+    display: flex;
+    padding: 5px;
+    img {
+      width: 30px;
+    }
+  }
+
+  &__add-to-cart:last-child {
+    margin-left: 10px;
+  }
 }
