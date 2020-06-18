@@ -109,7 +109,9 @@ $red: #ed1c24;
 }
 
 .order-list {
-  display: none;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .2s;
   position: absolute;
   top: 0;
   left: 0;
@@ -140,5 +142,10 @@ $red: #ed1c24;
     height: 100%;
     background: rgba(0, 0, 0, 0.466);
     cursor: pointer;
+  }
+
+  &_visible {
+    z-index: 1;
+    opacity: 1;
   }
 }
