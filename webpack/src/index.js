@@ -11,4 +11,9 @@ import './lessons/2/index.scss';
 import './lessons/3/index.scss';
 import './homeworks/2/index.scss';
 
+// eslint-disable-next-line import/extensions
+import lesson3d from './lessons/3/index.js';
+
+lesson3d();
+
 OfflinePluginRuntime.install();
